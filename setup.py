@@ -9,7 +9,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='RoboShodan',
-    version='1.0',
+    version='1.1',
     packages=[''],
     package_dir={'': 'roboshodan'},
     url='https://github.com/we45/RoboShodan',
