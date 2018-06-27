@@ -12,6 +12,6 @@ class RoboShodan(object):
         self.results_path = results_path
         self.target = target
         result = self.shodan_api.host(self.target)
-        with open('shodan.json', 'w') as f:
+        with open('{0}/shodan.json'.format(self.results_path), 'w') as f:
             json.dump(result, f)
         logger.info("Successfully ran Shodan against the target. Please find the *.json file in the results directory")
